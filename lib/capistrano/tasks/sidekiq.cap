@@ -197,7 +197,7 @@ namespace :sidekiq do
     [
         File.expand_path("../../templates/#{from}-#{role.hostname}-#{fetch(:stage)}.erb", __FILE__),
         File.expand_path("../../templates/#{from}-#{fetch(:stage)}.erb", __FILE__),
-        File.expand_path("../../templates/#{from}.erb", __FILE__)
+        File.expand_path("../../templates/#{from}.erb", __FILE__),
         File.join('lib', 'capistrano', 'templates', "#{from}-#{role.hostname}-#{fetch(:stage)}.rb"),
         File.join('lib', 'capistrano', 'templates', "#{from}-#{role.hostname}.rb"),
         File.join('lib', 'capistrano', 'templates', "#{from}-#{fetch(:stage)}.rb"),
